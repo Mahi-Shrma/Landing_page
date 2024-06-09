@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Kingdom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="bg-image"></div>
+        <div id="header">
+            <div id="logo">VRIKSH</div>
+            <div id="list">
+                <a href="#home">Home</a>
+                <a href="#shop">Shop</a>
+                <a href="#about">About</a>
+                <a href="#ct" id="contact" style="--clr:
+                #26965a"><span>Contact</span></a>
+            </div>
+        </div> 
+        <div class="slogan">
+            <span id="s1">GROW</span>
+            <span id="s2">your own</span>
+            <span id="s3">happiness</span>
+            <div>new</div>
+        </div>
+        <div class="header-img">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIREhEPERISEREREBISEhESEhISGREZGRgZGhkZGRkcJC4mHB8sIRgYJjgnLC8xNTU1GiU+QDs0Py40NTEBDAwMEA8QHhISGjQkJCs0NzQ0NDQ0NDQ0MTExNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQxNDE0MTQ0NP/AABEIARsAsgMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAABAAIEBQYDBwj/xABBEAACAQMCAggDBQYDCAMAAAABAgADBBESIQUxBhMiQVFhcYEykaEHFEJSsSNicoLB8EOSsiQzU2OiwtHhFRez/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/xAAfEQEBAQEAAgMBAQEAAAAAAAAAARECITEDEkFhUSL/2gAMAwEAAhEDEQA/AN2IhEIRNIIjoBHCAo4QCEQFCIhCIURDFDCBHRQgQBFiOigDEUdiCQDEWI7EEAYgxH4gxA54gInQiNIlDMQw4igRRCIhCIBEdAI6AhCIhEIBEIiiEKMMY9VV+JlX1YD9Y9Tnfu8YQRHCAQiAooRDAUMUUBQYhhkDY2PiIgMMaRHRGA2KGKBDEcIBHCUEQwCGFEQO4UFmIVVBLMxACgcySeQlN0j6S2/D0D1mJd89XSTBd8d+O4eZ2/SYyn9p9Gp2Lmzbq9QOFqLUzg5BZWVQcbHGe6ZtkTVtxv7QqdIEWtNq2DjrqmpKefLbLfTPcTMHxTplfXGQ9dkQ/wCHR/Zr747RH8RM9U4R0tsLvFKlWQO2wo1F6sn90Btm9ATMN9o/RMW5+/WtPTQY4rU0G1Fu51H4UPI9wPrtmy2e2epb+sclXLb7k75O+ZouhHE66XlvTpOwSpUVKlPJ0Mp+LK8sgAkHmMesylJgGRiQFLBW/dB2J9MZm3+za1WneVK1cqi2lq9R2Y4CMx0Ek+S65znPmOc5y69fdwoyxCjxJAHzMeJ4R0s6RPfXDuSeoRiKNNtgqjkxX8x5nPLOOQno32XazYsXbUpuH6pc56tAqDGO4aw5x55752nW3HXWzEMa7hQWYhVUZLMQAAO8k8pm26bWQqGn1gwCRrK1MHHhheXvHXU59lsntpoZka3SZn7dEgoGBB7JWoAdwccgfEbjb0mlsLtK9NalM5VuYyMqe9T5iZ5+SdXISypMUUU2pRGGCAMRpj40wBiCOigQhCIhCJQRKnpLxynYUGrv2nJ0UqecGq55KPLxPcPaW0z/AEj45Z2DpXuTqr6CtGmih3C57WnOyAkDJJGdIG+JKrymvwXinEKj3L21Z3qHJZ1FJQO4KHIwo7gI9ugXEwCfu2fIVaJP+qXPEftSuGJFtQp01zsahaoxHsVA+si0vtL4iMZS1Yd4NN1J+TTGRnwzF/wa4tx/tFtVpD87U2C/5vhljw7pbfUENNLg1KZUqaVwq1VwRgjt528sgeU1FP7VKuMVLOm+RhtNcqD7Mp/WYfjF0tzXevTt0tkqEEUqZyqnABOcAbkE7ADeS+PVS/xDVTk7DfORtjHht3Sxo3lSoTQ61KaVQiO9QlFcJqKa2AzjLH3wTy2fwPg9W8qG3oGnr06sVHCa8EbLsST5CN4lwataleup6Q7VFR1OpXKMUcA+IIOxwZEibW6NV6dS1RurqJdulOnXoOKqMWYAjUPxAHOP/Bm/4Ld/dnQoNKKFUqORQd3rj+kzP2XI73vVjeiENaopGVDIy6HHg+TjPgWE0N7RNOq6HbS7D67fTE5/LbznUc/ktmWND05vjTpU6S7tWcgAd+MfTcn+UTzipwpzkgHGfixz8h4+s2t1dLWe2YoCaVHQXck4JO+F7zgLuT3nzzG4kiv2U7beYOkeeORk6s7uyp1ftdYlTVoH9m2c815g+o5TU9BullKlUehcE0hVKlWPwBxkbn8Oc9+2w3kN7epSYu1MOoG5OwHyldUt6VRiXGC3LBwAe7zxOV6nFlvuLzs9PbRDMt0Fvnam1q7FjRCmkx3JpnYLnv0nb0I8Jqp7OO53zLHaXYEUMU2ppgMdAZAIocRQIQhEAhmgp4h0vpVr3i9ejTUu5qLRpr4BEGd+5QdTE+s9wmU4JwxLa54pxCuVUmu4DtsEpBUdjnuzqGf4BM2aVC4N9n1la0+suyK7KpZ2qMUpU9t+zkZHmxPtIV/xjo7Syot6FZl7qVsrA+jEBT7GY3pf0rrcQqMuo07VW/Z0RsCByd/zN3+A7vEyOE9Baz0/vN26WVqqh2qVcaypxjCZ2zn8WD5GZ38ib/iJ0m4pYXCoLKyNs6vl6moAMuD2dCkrzwc+XnKvh1jVr1Eo0UapVfIVVxnYEnckADAJyTI1dU6yoKbF6YdwjsNJZATpJHcSMHEk8NvntqtO5pHD0nDr4HxU+RBIPkZm3z5Zt8ul/wAPrWtQ0q6PRqppbS2MjvVlZTgjbmDzB8JpLDjjXdpV4ZcIatRusrWlUAtU64FnKt46u2NX7xB55G16W2tPifC0vqS9tKf3intlgo/3tM48gdvFBM99lXCle5e5cH9kjiiO4t2Q7eyuB/MfCWzKueW46E9G14fbhWANxVw9dxvvvpQH8q59ySe+LpVwzUPvKDcACoB3jub+h9vCaQTneV0p06lWp/u0pu7/AMKqSfoJe+Z1zh1zLMeZpUGspvkDJ2yPQn3kiizKezkg8t8e05ogPaA06+0QPPfE7UX7WnwP1/vaeGeK8ls3wn0cVAVOx3BGEbcbETNce6PVFYVKZyO/T2T8ppbiorU2Zdqi7kjmc9//ALkMveMp7Idf3lwf6Tv4sy+XTxTejdZ7dkqElhjDKQAShxkeu2R6T0hSCARuCMg+Inkgv6nWBDTVdwGwTtjnmejdFbk1LWmW5ozU8+Q3H0IHtL8PU+31jtxfxbRQwT0tmxQwSARQxQIQhEQiE0CJRdNrBrjh93Tp519WHAXm5psr6ffRiXwhxGK8T+zno+Lu566oM0LbS7Dudzui+Y2LH0A5GcvtA6TVLyu9BWItaFRkRB/iOpKmo3jvnHgPUz13gnBqdp94SmAqVrlq6gfh1KgK+gKtjyInhHHuG1ba4qUqyNTfUzDPJ1J2ZTyYHxH67TnfEZsyK5BOirsZJseHVaraKVOpVfYFaaM5GfHA295reE/Zxe1cGt1dqh562FR/ZFOPmwnPLfTGWtZ9k1UvY1ab7pTuXVQeQVkRmHzZj/NLDoxwz7nT4ZTIKs9C4WoDz1uEq4PmNLD2ljwLhVDhtuLbrBhmZ2eoUQ1CQAdvDAA7+U6cXrKwtK6MCqXtPJHg6vSwfdxOmePLcnhciUnS4F7dbYc7u4oW38rOGf8A6EeXcp+JjXfcPp4yKYurk+RVFpp/+jfKavpaoOMUOrrVgBtrLAD97tD9ZXLSKhRjmur6+M1HSe17auB8a6T6j/0fpI3FLUdXblQAeo3wNznE8vXHmvL1x5qrdyEDrg45jA+hnepximiBsMM+WYranzQ9/LPj/eJGvLYFCMbZzjw7iPniJbzNiS2R24K9vcPcu4xUFCroUgYIKFXYeYG3oT7aXorQKWlPPN9VT2Y7fQCedU80iz74AZdjgtkEFR6g+09T4ZdJWo06tMaUdFKr+XG2n2xj2mvh/wCruO3x3UqKKKel1NgMdAZAIoooEMQiAQiaDhDAI4QGNk5AyO7Vt9M7TKdLEs3X7vWSpXqKQ65qMOrbmO1+HI7lHKa8CZh7Vq9diw1OTshzoopyVnH4mOMhNvOY638Kp6/TX7qq0aVnSVQowq1GpqvlpCf1knhPSmvdqXNNaCUXyxpuX63K7IdS9kDOo4/d8ZmuMW1TiF+lorMvbamC3KkqZ1kKMAfCTgAc8T0Ph/A6FuotUU9U1HGCd2ZWyzk/mOoHP7o8Jzl66nisy658Ctkr06j1FLsXK63LZbAGwI7gSdu7eO6RWi07OsU2FM0a3vSqI+r10rufKXlNFRQiAKqjCqBgAeAE48RtxVoVqR5VKNRP8ykf1nSc5zn61+JSHIDeIB+cqaILcRqt3UrGig8meo7N9FSSuC1tdtQfvalTz64AMj8K7VzxB/8Am0aa+iUkz9WMbuCffWwqUyneCGX1H9ke8rLykf2IKt2aTKTg4UqV5nkM7/KS+PcQNtbVbhVDMirpDZxlmCgnHcNWfaYqy6dXBY66dJwQcAakwe48zkeX1me+uZfLHV53KtdHb2/vv/pI/GcojuACcBgp7ySq/Pf6TnZ8Seo71HSnTQbnRlQNtsZJyTH3F4apGhqVNUz+0rEnyyqKNz6/KcZZ1LjlmK60r1ti1vSZQQdLg4555HIm74XxFKygBercDdDjA/hPeJjUBbOqvctjkyUlRW9Ad8e0vOGWynBpXJd+fV1aYpuMen64InT4/wDn03za0sU421bWu40up0uvgdj8iCD7ztOzqEBjo0wFFBFIIYjhGiOE0oiOgEMAicqFsqNUZc5qPrbO++AMDy2z7mdYRCKGlwIJxJr1fge3fI/LUyik+6599UuLo4Cv+RwT/Cey3yDZ/llX0h6TULJDrOurjs0UOWJ7i35F8z7Znml/04vKur9sKaMCOrp06YGD3ZILcvOc7nMyJ4j2fMcs+er7ita4INarUqleWt2bT6A7CeudAh1dlR62qDUr5rKr1MkI4GgAMc40gH+aWdbSdatejLf7Po/4dWtT9NLsMQ9HjqF0/wCa+ufkr6R/pjOj3ZqXtP8AJe1Gx4a8P/3R3Rfe31/8StXqf5nYyT8VL4tZ/eKFahkDrKbICe5iOyfY4M886H9GTcVKjXAZKdvUNOpTzgs43KEjkACCSOeRienxiUlDM4ABfBcjbUQMAnzxgZ8APAS9cy2Ws3mW6wHS23S3rqiIqUnpq6ooAAIJU4Xu5A+5lTSuWzkOq4P5FGPdVzNzW4Ql9Teq/Zeswei4AJSmgIpjzVgWcj/mHwGMk/Bq1Bq1F0y2jrKbrkipoPbCn+BnOOeVHlPP3xZ1scu+bLqw+/KUHV0FqNgam+81lYnvIUYP0EhPfvq0MOrYnKBnVhnu0uMYPk2/nnE58MrqhJamlRCBrRgNx3Mp/CR5fLwta9ojoatPNegPjQ71KHk35h5/WOds2VJdi/6O8RNZWRwRVp7MSMFgNt/MZwfUS6mN4UTTdKtJ+sRRoKMcEDGMauYI7gcjYcpsp6ObbPLtzdgQGGAzTQRRRSCGIRAIRNKcI6NEdAruO8YpWVE16xOM6URcFqjnkqjx2PoATMJ/9msxw1tSI37AuHzjzwhz8hJ/T62qXF1ZW9KmKtTS706b/AoyNdSoPAYQAHY5bY7A5/jNRci3rcQuryvkqbawVEpKfyk7qxGPwoSO8CYtrNP4x0g4ZepirbVLWrzWvbrTcg/vghNa+R38CJjrhED6ab9anc5p9WT/ACZOPmZZVrCmupmr06Ox00mq1Lh8juZ6SaAT5kYzuJwo0yFaoQ7KgBJ7TBM7DUeQz3ZnPralC0tlAZnGptJFNPEnHabxAGogd5x3ZytKhiXBZicMWwSSNsEnfbGMd2JJueIJbVn6ioLik608VWplHXdXOAd1YEYPcd/a04pZtdrb1aS6qz1hbHT/AImUL02J8lRwW/KF8JPXga77Lq7P97YkkZpAZJPwhh+mkew8JpuiJ/2G2P5k1fM5lZ0e4ctlUqWy4OmypOzctb6n1t7kfLEpr7pFUs7Cxt6JC1alsGapgEoo2GkHbJIbfu0nx21z1nv+m49DZgBkkAeJOJB4pV10xRRstcOKIZT8KkE1GBHIhA+PPTPFnZ6zqaju7tl2eozVCq555bPfJFpdvRqg0WZGXkyEqQPA47vKavf8Z+73FFAAAGAAAAO4DkInQHGRyOQfA+I+vzmU6PdJ2qYS4xnG1RRjP8QH6j5TWK2dxuDuCN8zcutyysPxngrUajPTU9WWLIAPhzzX03Ix4SJb1npstaidDjmOYbxBHePKehsARggEeBldc8Fo1GD6dPay4XIDjzH9fWcOviy7y5X4vOxWpwtLk0buiTQ171kA+LB3CjlzBGeXf66OIKAAAAABgAbARTtzzjpOcCAwwGVoIoooEMQiAQiVThDAI6Bg+n9y1BnKB1a6t6dDrgcaEpu7OiY31MXXPkJlxdUeGp1ZpJWu2XtUSMU6GRkLVxvUcAjKZCj1GZ63e2NOuEWqgcU6lOomfwujBlIPt7gkHYzznpD9n1YGpcUKv3gszVHR10Ockk4IyH3PLb3mOpfbNYjifEq11UFWswZgNKKqqi0xknSqqMAb+viTNd0ctieEcWqNuGCAZ8aah8/NxI9ToHfqBigrYHIVaWfqZuU6O1E4X/8AH0zT62ogFR3YhVZ3DPyBJwMqNu4TMlSR4uy8vSehdHrmpa2tNVAFcl3LOMmkrbKoU7a9I5kbBsd5mj4F0CtbcBqpNxVwRrYaUQnvRPHzJJ8MShpo7ljqw2t9XI4bUcjfzk+tlZuyJFpx6qtRnq/tGemaRbCqdPaIxpAGQWJ5Sh6c0GROGvuUa1NPUNwDTdiR6nWPlLZrYnbrC3ktNW+uMfWReK22umtGs5OnLIM702P4sDOM9/jvMdXPOMfb/WXF1gED42xnH4QBhV9vqZZ8H4PdXG9KlUZeepRpU/ztgE+8hU7Ao+l104OCPH37xNX/APP1nAR6tVgAAtOnimox46MZ9Ill9pLFlwvozXQguKdP+OopP0zNhw9KlPCPhkb4WU5Ctzx6Hf39ZgrbrHORSO/eWH9JeWdy9PBwVI9wcePjOvNjfNkbKKcbW4FRFcd/MeB7xO06OowGKKFCNMJgMiFFBFAiCIQCESqeIRAIRAdCBAIRCFHRCKAph61qtKtdbfFXqNjuw518v5zNxMnx6mVrVSPxhHH+QL+qzPUZ69M7fcTc1OopnDYy7bYpqB3fveuwzJPD+Bh6dZ3qHWgUqFOQzsCdO+7Hbc/0E73HR/q7am3+NcOWqOc9kfGox5fqYy6uBbpimP2lRyF7yWJyfYf3uZysv28+nKzPaFecMGRg5ZcK+PDu9x+mPCXPAbqnaKR1S1HY51Z7Q8tlO062/DmWmjN+PIGebeJI8951tbdFfSx0rncjHKXnnKSWVIr9KWTfqKmPHRVYfPSIy36SWtydFQaH5alI1KfMEb++ZPq21FhinX0n98Ky+/I/WY7pRaNSw9WmrIThLimcrnuGobo3kdj3ZxN22NW1vOFgozocMpVaiOvJwcg+h23HpLKYXoDxl6jvbM2sLTLqTz2Kjf8AzTczXN2OnN8FFFAZVIxphMBgKKCKBDEcIwRwhTxHRgjoQ4RwjRCIDhDAIYBlHxukGrWqn/Fc0z6L2iPkWl5KLpYdFO3uOX3e9o1GP7p1If8AWJnq5NSzwh8V4iKtd6KnIoEUzjkXIDN8sgeqmZurVXr2uKmert1OkDvxzI8ycD2EtuI8KW1vHemTouusq6fyVNQ6zB7wS2r3I8JSdJR1dEIOdSoin0XLf9omLXLr20dtfPUXrXwCwGlRyQdwHkB+k7VgGAOAQvPUAwI78gyBb9mmg/c+RbCD6EyWzYX23/WaCp8BW4DMlNaeDgPTqFCTz+EDHz2lJf8AX2xehUPXUWGl0cb6T+ZeRHmPWSre+KN2WKuDgHJGr1xO/H7hbm1qVG7FxaUnqqwxioiDLofbJHgRnlkGeBy+z3g/V3FxcI2qiaSpTycspdtTKfTQN+8MO/M38oOhli1K0VnBV6x60qdigIARcd2wBx3apfTXMyOvMyDAYoDNKRgMJjTAOYoIoEIRwjRHCA4RwjRCIDxCI0RwgPEMaIoDpUdLKWuxuhz00jUA80If/tlvON3S106iHk6Oh/mUj+snU2YMfxi9W4o2VZGy4ROsxzR2FB8Hzwc+8zHEq9S5NPkXprTqMi57ZJw2B6Bj6Cc+j9Q9U6EnJC1AD3FQ6N9Sg9p06LW3W8TfO6o4Qf5mJH+VR854tv3ufxm861z27BQmMPhVwdsEEEZ8NxGu2V28Jrbi2SoMOobuzyI9CNxK08Ap9Y79ZVAdi5p5p6VJA1aeznc5Y5J3Yz2Yl5ec8TdqdTI5MBkeY/v6TS9FLKpcFarpikjblwCtTYgqAfiG5B7ufpLa66JUaj02Z3Kq4Z0bT2wO7KgY/wDBM0SqFAVQFUAAADAAHIAdwmeebvk558+TooIp0bKKKKADGmEwGAIoooEMGOBnMGOEK6CERoMcIQ4R4nMGOEB4hjRHQA76QW8JXjiDs7J1elCu1TWM5O2w8ucmXHwN6f1lYg3ma1IwvDuAXdOoR1NQqHdA404ZNTMG58j2ZP6E8BvKNZ7itbVFZnqOFJQas5C9/hN/bJLSgs5T45uimoPds2GtNC/mNxT/ANIEmspU4PMc5biVt18be36CdojlFFFKhRRQQDG5igzARjTCTGmAYoMxQIQjgYwGEGUdBHicwY4GQPEcDGAxwMB4jhGAxwgMuPgPt+sr6Y3k+4+A+0iUhvM1qLK2WWdISvthLGnIjtK28+M+36Sylbe/GfQTUHGKCKVBggzBAURiJjSYCMaTETGkwHZijcwwIQjgYwGOEqngxwM5gxwMI6Ax4M5gwgwroDHAzmDHAyIFweyfaR6Q3neuez7icKI3ma1PS1tpPpyBbSfTkR2lbffH/KP6yxlbfnt/yj9TLBwzBmDMGZpDswZjcwEwHExpMUaTKETATEY0mTAcxRuYowRgphAM7hI4JGq4AQid9EOiNHKLM7dXF1UaOWseMIceM6G3gNqY1HOo4IxnwgpLE9q/cMyPruabYFA1E78Oob2B2PuRM1qLq3k1DKm2uWPxUaqHzCH/AEsZPR2/I/8A0D9TImJgMrr4EvsCcAD+/nJaljzwPfJ/9fWMKywqv6tvAxdW3gZPxFia1EDq2/KYOrb8pk/EWI0V/Vt+UwGk35TLHEGI0VppN+UwGi/5TLMiNIjRW9U/5TFLLTFGiAFjtMcIYU0LHBY4RwhDQsIEMUAiOEAjhIFCIoRIHLOixix4kU+MaPEY0qGxQxSgRQxQBiLEMUBuIMR8BgNxFHRSD//Z">
+            <div class="side-content">Dive into the world of greenery with
+                <div id="num">100+</div> plants varieties
+            </div>
+        </div>
+    </header>
+
+<!-- main -->
+<main>
+
+    <div class="Offers">
+        <h1>Best Offers</h1>
+        <div class="offer-div1">
+            <div id="offer1">
+                <h2>All Potted plants - Upto 40% off</h2>
+                <p>Find your shade of green at your fingertip.</p>
+                <button id="shopbtn">Shop Now</button>
+                <img src="https://plus.unsplash.com/premium_photo-1672218147368-332ba9c1386e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div id="offer2">
+                <h2>Pack of Indoor plants - Save Upto 40%</h2>
+                
+                <p>Leaf your worries behind.</p>
+                <button id="shopbtn">Shop Now</button>
+                <img src="https://nurserylive.com/cdn/shop/products/nurserylive-combo-packs-plants-set-of-6-plants-for-healthy-and-refreshing-day-16969319547020_869x869.jpg?v=1634228762">
+            </div>
+        </div>
+        <div class="offer-div2">
+            <div id="offer3">
+                <h2>Kitchen Garden Plants - Upto 30% off</h2>
+                <p>Elevate your kitchen with our Botanical beauties.</p>
+                <button id="shopbtn">Shop Now</button>
+                <img src="https://img.staticmb.com/mbcontent/images/crop/uploads/2023/10/kitchen-garden-plants_0_1200.jpg">
+            </div>
+            <div id="offer4">
+                <h2>Organic Seeds - 60% off</h2>
+                <p>Sow the seed of live with every plant you grow.</p>
+                <button id="shopbtn">Shop Now</button>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcDFt036iPjx5F55nHiA-yAJuhuM5ilolMbw&usqp=CAU" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <div class="car">
+    <h1>Categories</h1>
+    <div class="categories">
+        <div id="car1">
+            <img id="circle" width="150px" height="200px" src="https://nurserylive.com/cdn/shop/products/succulents-mix-4-600x600-466057_657x600.jpg?v=1685021422" alt="">
+                <h4>Succulents</h4>
+        </div>
+        <div id="car1">
+            <img id="circle" width="200px" height="200px" src="https://nurserylive.com/cdn/shop/products/nurserylive-g-golden-cypress-bonsai-plant_600x600.jpg?v=1634220546" alt="">
+            <h4>Bonsai</h4>
+        </div>
+        <div id="car1">
+            <img id="circle" width="200px" height="200px" src="https://nurserylive.com/cdn/shop/products/nurserylive-combo-packs-pots-3-inch-8-cm-handi-shape-round-ceramic-pots-pack-of-five-16968466235532_600x600.jpg?v=1634208196" alt="">
+            <h4>Cute pots</h4>
+        </div>
+        <div id="car1">
+            <img id="circle" width="200px" height="200px" src="https://nurserylive.com/cdn/shop/products/nurserylive-gardening-made-easy-with-herb-gardening-kit-1_600x600.jpg?v=1634219966" alt="">
+            <h4>Gardening kit</h4>
+        </div>
+    </div>
+</div>
+</main>
+<!-- main end -->
+
+<section id="shop">
+    <span><h1>🌱Indoor Plants - New Arrivals🌱</h1>
+        <button id="btn">View all</button>
+        </span>
+        <div class="new-plants">
+        <!-- <h1>Our new collections</h1> -->
+         <div class="new">
+            <div id="box1">
+                <h3>Bougainvillea Bonsai</h3>
+                <h5>full year flowering bonsai plant</h5>
+                <img width="250px" height="300px" src="https://m.media-amazon.com/images/I/51HLVx5jJtL.jpg">
+            </div>
+            <div id="box2">
+                <h3>KYARI Peace Lily</h3>
+                <h5>Indoor Plant for Living Room</h5>
+                <img width="250px" height="300px" src="https://m.media-amazon.com/images/I/81kf5e1lgbL._SX679_.jpg">
+            </div>
+            <div id="box3">
+                <h3>Sansevieria Hahnii<br> Snake Plant </h3>
+                <h5>(Indoor Plants)</h5>
+                <img width="250px" height="250px" src="https://nurturinggreen.in/cdn/shop/products/PKP04063_1800x1800.jpg?v=1647925225">
+            </div>
+            <div id="box4">
+                <h3>Philodendron Broken<br> Heart</h3>
+                <span><h5>(Monstera Adansonii) </h5></span>
+                <img width="250px" height="250px" src="https://nurturinggreen.in/cdn/shop/products/PKP04035-Copy_1800x1800.jpg?v=1648732407">
+            </div>
+            <div id="box5">
+                <h3>Areca Palm Plant </h3>
+                <h5>Purify indoor air</h5>
+                <img width="250px" height="300px" src="https://www.ugaoo.com/cdn/shop/files/DSC_2431.jpg?v=1692966811&width=550">
+            </div>
+            <div id="box6">
+                <h3>Peace Lily</h3>
+                <h5>Spathiphyllum - Plant</h5>
+                <img width="250px" height="300px" src="https://nurserylive.com/cdn/shop/products/nurserylive-peace-lily-spathiphyllum-plant-in-4-inch-10-cm-black-pot-230563_600x600.jpg?v=1685021926">
+            </div>
+        </div>
+        </div>
+</section>
+
+<div class="flowering-plnt">
+    <h1>Flowering plants - Upto 50% off</h1>
+    <button id="btn">View all</button>
+    <div class="range">
+        <div class="plant" id="pln1">
+            <img width="230px" height="250px" src="https://plantskingdom.in/cdn/shop/products/nurserylive-bulbs-gladiolus-black-beauty-red-black-bulbs-16968880717964_275x275.jpg?v=1658208700">
+            <div class="des"><h5>Red Black Gladiolus bulbs<br>-Pack of 9 bulbs</h5></div>
+            <div class="price"><h6>Rs.258.90</h6></div>
+            <button class="fl-btn">Shop Now</button>
+        </div>
+        <div class="plant" id="pln2">
+            <img width="230px" height="250px" src="https://cdn.shopify.com/s/files/1/0574/4754/6925/products/nurserylive-bulbs-zephyranthes-rain-lily-white-flower-bulbs_275x275.jpg?v=1658208676">
+            <div class="des"><h5>Zephyranthes Lily, Rain Lily<br> (White) - Bulbs (set of 10)</h5></div>
+            <div class="price"><h6>Rs.258.90</h6></div>
+            <button class="fl-btn">Shop Now</button>
+        </div>
+        <div class="plant" id="pln3">
+            <img width="230px" height="250px" src="https://plantskingdom.in/cdn/shop/products/nurserylive-bulbs-rajnigandha-tuberose-bulbs-16969239363724_600x600.jpg?v=1658208666">
+            <div class="des"><h5>Rajnigandha, Tuberose<br>- Bulbs (set of 5)</h5></div>
+            <div class="price"><h6>Rs.258.90</h6></div>
+            <button class="fl-btn">Shop Now</button>
+        </div>
+        <div class="plant" id="pln4">
+            <img width="230px" height="250px" src="https://plantskingdom.in/cdn/shop/products/nurserylive-bulbs-freesia-purple-5-flower-bulbs_600x600.jpg?v=1658208703">
+            <div class="des"><h5>Freesia bulbs for sale<br> (set of 5)</h5></div>
+            <div class="price"><h6>Rs.450.00</h6></div>
+            <button class="fl-btn">Shop Now</button>
+        </div>
+        <div class="plant" id="pln5">
+            <img width="230px" height="250px" src="https://cdn.shopify.com/s/files/1/0574/4754/6925/files/DhaliaFlowerplant-5_275x194.jpg?v=1703397539">
+            <div class="des"><h5>Dahlia Flower Bulb<br>(Set of 5)</h5></div>
+            <div class="price"><h6>Rs.1200.50</h6></div>
+            <button class="fl-btn">Shop Now</button>
+        </div>
+        <div class="plant" id="pln6">
+            <img width="230px" height="250px" src="https://cdn.shopify.com/s/files/1/0574/4754/6925/files/amaryllis-lily-flowers-bulbs-2_276x324.jpg?v=1703507610">
+            <div class="des"><h5>The Amaryllis Lily Flower<br> Bulb-(Set of 5)</h5></div>
+            <div class="price"><h6>Rs.119.40</h6></div>
+            <button class="fl-btn">Shop Now</button>
+        </div>
+        <div class="plant" id="pln7">
+            <img width="230px" height="250px" src="https://plantskingdom.in/cdn/shop/products/nurserylive-bulbs-amaryllis-lilly-double-white-pink-4-flower-bulbs_600x600.jpg?v=1658208678">
+            <div class="des"><h5>Amaryllis Lilies Plant<br> for Sale-(White, Pink)</h5></div>
+            <div class="price"><h6>Rs.225.90</h6></div>
+            <button class="fl-btn">Shop Now</button>
+        </div>
+        <div class="plant" id="pln8">
+            <img width="230px" height="250px" src="https://plantskingdom.in/cdn/shop/files/CallaLily-1_850x850.jpg?v=1703554923">
+            <div class="des"><h5>Calla Lily Flower Bulb<br>(set of 5)</h5></div>
+            <div class="price"><h6>Rs.580.50</h6></div>
+            <button class="fl-btn">Shop Now</button>
+        </div>
+    </div>
+</div>
+
+<div class="blogs" id="blogs">
+    <h1>Latest Blogs</h1>
+<div class="review">
+    <div class="bl1" id="blog1">
+    <img width="380px" height="280px" src="https://i0.wp.com/theaffordableorganicstore.com/wp-content/uploads/2021/01/Best-5-gardening-blogs-in-India-scaled.jpg?resize=2048%2C1024&ssl=1" alt="">
+    <a href="https://joegardener.com/blog/">The right gardening is all about gardening goodness, helpful resources, and sustainable living......</a>    
+</div>
+    <div class="bl1" id="blog2">
+    <img width="380px" height="280px" src="https://www.allthatgrows.in/cdn/shop/articles/Feat_Image-TG1_1100x1100.jpg?v=1604481665" alt="">
+    <a href="https://www.allthatgrows.in/blogs/posts/terrace-gardening-in-india">Terrace Gardening - Everything You Need To Know.......</a>    
+</div>
+    <div class="bl1" id="blog3">
+     <img width="380px" height="280px" src="https://kyari.co/cdn/shop/articles/top-indoor-plants-to-give-as-a-gift_1.jpg?crop=center&height=480&v=1715081594&width=640" alt="">
+    <a href="https://www.ambius.com/resources/blog/plant-profile/the-ultimate-guide-to-indoor-plants">The Ultimate Guide to Indoor Plants.....</a>
+    </div>
+</div>
+</div>
+
+<div class="about-section" id="about">
+    <h3>About Vriksh: Cultivating Nature’s Bounty</h3>
+    <p>At Vriksh, we believe in nurturing the green world around us. Our passion lies in connecting people with the beauty and benefits of plants. Here’s what makes us unique:
+
+        Ayurvedic Approach: Inspired by the ancient science of Ayurveda, we embrace holistic plant care. Just as Ayurveda promotes balance and well-being for humans, Vriksh applies similar principles to plant health. We understand that a thriving plant kingdom contributes to the overall harmony of our environment1.
+        Diverse Plant Collection: With over 170 plant species, Vriksh offers a rich variety of green companions. From medicinal herbs to ornamental trees, each plant has a story to tell. Explore our curated selection and find the perfect addition to your home or garden.
+        Sustainable Practices: We prioritize eco-friendly methods. Our team practices water management, soil conservation, and organic fertilization. By following the wisdom of Vriksha Ayurveda, we ensure healthy growth and productivity for every plant.
+        Community Engagement: Vriksh isn’t just a shop; it’s a community hub. Join our workshops, gardening classes, and tree-planting initiatives. Let’s grow together!
+        Kalp Vriksha: Ever heard of the Kalp Vriksha? It’s a legendary tree that fulfills wishes and brings happiness. At Vriksh, we encourage you to grow your own Kalp Vriksha—whether it’s the fragrant Parijat (Nyctanthes arbor-tristis) or any other cherished plant2.
+        Visit Us: Step into our cozy antique shop, where time seems to stand still. Discover unique plant-related artifacts and immerse yourself in the world of green treasures3.
+        Join us at Vriksh as we celebrate the magic of plants. Let’s cultivate joy, one leaf at a time!</p>
+</div>
+
+<footer id="ct">
+    <div class="table">
+        <ul class="list1">
+            <li id="hd">About Us</li>
+            <li>About Vriksh</li>
+            <li>FAQs</li>
+            <li>Refund Policy</li>
+            <li>Privacy Policy</li>
+            <li>Shipping Policy</li>
+        </ul>
+        <ul class="list2">
+            <li id="hd">Customer Care</li>
+            <li>Take the quiz</li>
+            <li>Rewards</li>
+            <li>Coupons</li>
+            <li>Terms and Conditions</li>
+            <li>Terms of Services</li>
+        </ul>
+        <ul class="list3">
+            <li id="hd">Get in touch</li>
+            <li><b>Address : </b>1001, SkyLine building, Varanasi, Uttar Pradesh</li>
+            <li><b>Call us: </b>+91 67000-3457</li>
+            <li><b>Email : </b>support@vriksh.com</li>
+        </ul>
+        <!-- <table>
+        <tr class="row1">
+            <th>About Us</th>
+            <td>About Vriksh</td>
+            <td>FAQs</td>
+            <td>Refund Policy</td>
+            <td>Privacy Policy</td>
+            <td>Shipping Policy</td>
+        </tr>
+    
+        <tr class="row1">
+            <th>Customer Care</th>
+            <td>Take the quiz</td>
+            <td>Rewards</td>
+            <td>Coupons</td>
+            <td>Terms and Conditions</td>
+            <td>Terms of Services</td>
+        </tr>
+        <tr class="row1">
+            <th>Get in touch</th>
+            <td>Address: 1001, SkyLine building, Varanasi, Uttar Pradesh</td>
+            <td>Call us: +91 67000-3457</td>
+            <td>Email:support@vriksh.com</td>
+        </tr>
+    </table> -->
+    </div>
+
+    <div class="pages">
+        <h5>Follow us on</h5>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook" style="color: #0d27e7;"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-youtube" style="color: #ff0f27;"></i>
+    </div>
+
+</footer>
+
+
+</body>
+</html>
